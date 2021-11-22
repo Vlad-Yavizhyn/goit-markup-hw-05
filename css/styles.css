@@ -130,6 +130,7 @@ img {
 }
 
 .site-nav-item {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -149,6 +150,33 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   padding: 32px 0;
+}
+
+.current-line-studio {
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: 0px;
+}
+
+.current-line-portfolio {
+
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: 0px;
 }
 
 .current {
