@@ -8,7 +8,7 @@
   --accent-color: #2196f3;
   --button-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -154,12 +154,12 @@ img {
 
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .current::after {
   position: absolute;
-  content: "";
+  content: '';
 
   left: 0;
   bottom: 0;
@@ -195,7 +195,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-
 .contacts-item-header:not(:first-child) {
   margin-left: 50px;
 }
@@ -223,7 +222,7 @@ img {
   display: flex;
   align-items: center;
   font-weight: 500;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .contacts-link:hover,
@@ -231,13 +230,11 @@ img {
   color: var(--accent-color);
 }
 
-.mail-icon:hover 
-.mail-icon:focus {
+.mail-icon:hover .mail-icon:focus {
   fill: var(--accent-color);
 }
 
-.smartphone-icon:hover 
-.smartphone-icon:focus {
+.smartphone-icon:hover .smartphone-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -254,7 +251,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/hero-img.jpg);
+    url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -312,7 +309,7 @@ img {
   min-width: 528px;
   min-height: 581px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .button-close {
@@ -323,11 +320,10 @@ img {
   margin-left: 490px;
   margin-top: 8px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   fill: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
 }
 
 .close-icon {
@@ -393,7 +389,7 @@ img {
 
 .work-thumb-one::before {
   position: absolute;
-  content: "ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ";
+  content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +402,7 @@ img {
 
 .work-thumb-two::before {
   position: absolute;
-  content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
+  content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,7 +415,7 @@ img {
 
 .work-thumb-three::before {
   position: absolute;
-  content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
+  content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,7 +442,7 @@ img {
 .our-team-item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-   0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -489,36 +485,30 @@ img {
   margin-left: 10px;
 }
 
- 
-
 .team-social-link {
-width: 100%;
-height: 100%;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #AFB1B8;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .team-social-link {
   fill: currentColor;
 }
 
-.team-social-link:hover, 
+.team-social-link:hover,
 .team-social-link:focus {
-fill: #FFFFFF;
-background-color: var(--accent-color);
-
-
-
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 .team-social-icon {
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
-
 
 /* WebStudio's projects */
 
@@ -541,7 +531,8 @@ background-color: var(--accent-color);
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function), box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .filter-item:not(:last-child) {
@@ -556,7 +547,8 @@ background-color: var(--accent-color);
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-group {
@@ -566,13 +558,14 @@ background-color: var(--accent-color);
 }
 
 .project-link {
-display: block;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
-.project-link:focus, 
+.project-link:focus,
 .project-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .progect-box {
@@ -617,7 +610,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 50px;
 }
 
-.button-icon-link  {
+.button-icon-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -625,8 +618,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+  transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .button-icon-link:hover,
@@ -663,7 +656,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .address {
@@ -682,7 +675,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .contacts-link-footer {
   margin-bottom: 9px;
   color: var(--secondary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .contacts-link-footer:hover,
@@ -736,22 +729,18 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms var(--timing-function);
 }
 
 .footer-social-box + .footer-social-box {
   margin-left: 10px;
-  
 }
 
-
-.footer-social-link:hover, 
+.footer-social-link:hover,
 .footer-social-link:focus {
   background: var(--accent-color);
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
-
-
 
 /* .social-icon {
   fill: #FFFFFF;
