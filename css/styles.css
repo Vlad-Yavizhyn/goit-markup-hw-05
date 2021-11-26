@@ -569,11 +569,19 @@ img {
 }
 
 .progect-box {
+  position: relative;
   margin: 15px;
   border-bottom: 1px solid #eeeeee;
 }
 
-.project-overlay {
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+/* .project-overlay {
   position: relative;
 }
 
@@ -590,7 +598,7 @@ img {
 
 .progect-box:hover .project-overlay::before {
   opacity: 1;
-}
+} */
 
 .progect-title {
   font-size: 18px;
